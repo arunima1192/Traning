@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    
+    #mainbody {
+      width: 100%;
+      height: auto;
+    }
+    
+    .header {
+      width: 100%;
+      height: 180px;
+      background: linear-gradient(to right, #ff5757, #8c52ff);
+    }
+    
+    #img1 {
+      width: 200px;
+      height: 150px;
+    }
+    
+    #h1, #h2, #h3, #h4 {
+      font-size: 20px;
+      color: white;
+    }
+    
+    .content {
+      padding-top: 1px;
+      width: 100%;
+      background-color: powderblue;
+    }
+    
+    #slider {
+      overflow: hidden;
+      width: 100%;
+      height: 400px;
+    }
+    
+    @keyframes slider {
+      0% { left: 0; }
+      30% { left: 0; }
+      33% { left: -100%; }
+      63% { left: -100%; }
+      66% { left: -200%; }
+      95% { left: -200%; }
+      100% { left: 0; }
+    }
+    
+    #slider figure {
+      width: 300%;
+      position: relative;
+      animation: 9s slider infinite;
+    }
+    
+    #slider figure img {
+      width: 33.333333333%;
+      height: 100%;
+      float: left;
+      max-width: 100%;
+    }
+    
+    .footer {
+      padding-top: 1px;
+      background: linear-gradient(to right, #ff5757, #8c52ff);
+    }
+    
+    
+    @media screen and (max-width: 768px) {
+      #h1, #h2, #h3, #h4 {
+        font-size: 16px;
+      }
+      
+      #img1 {
+        width: 150px;
+        height: 120px;
+      }
+      
+      #slider {
+        height: 300px;
+      }
+      
+      .footer p {
+        font-size: 14px;
+      }
+    }
+    
+    @media screen and (max-width: 480px) {
+      #h1, #h2, #h3, #h4 {
+        font-size: 14px;
+      }
+      
+      #img1 {
+        width: 120px;
+        height: 90px;
+      }
+      
+      #slider {
+        height: 200px;
+      }
+      
+      .footer p {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <div id="mainbody">
+      <div class="header">
+        <img id="img1" src="https://m.media-amazon.com/images/I/91oF9q-jE5L.jpg">
+        <table class="table"> 
+          <tr>
+            <th><a id="h1" href="Aboutas.html">About Us</a></th>
+            <th><a id="h2" href="lo.html">Sign In</a></th>
+            <th><a id="h3" href="registration.html">Sign Up</a></th>
+            <th><a id="h4" href="contact.html">Contact Us</a></th>
+          </tr>
+        </table>
+      </div>
+      <div class="content">
+        <div id="slider">
+          <figure>
+            <img src="https://img.freepik.com/free-photo/workers-it-company-working-computer_1303-19428.jpg" alt="Image 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0g-9R4cNvNRrHclAnmLK4_jr6wmqe9umd2tgAwj0w&s" alt="Image 2">
+            <img src="https://st3.depositphotos.com/1441511/18503/i/600/…8-stock-photo-people-working-in-modern-office.jpg" alt="Image 3">
+            <img src="  https://images.unsplash.com/photo-1531973576160-71…5fGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60" alt="Image 4">
+            <img src="https://deal-studio.com/wp-content/uploads/2023/06/bigstock-Many-Happy-Business-People-Sta-476661257.jpg" alt="Image 5">
+          </figure>
+        </div>
+      </div>
+      <div class="footer">
+        <p align="center">Website: www.Hopesolutions.com<br>
+        Contact Email: hopesolution@gmail.com<br>
+        Phone: +91 8855997712 </p>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
